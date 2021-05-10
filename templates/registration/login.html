@@ -5,8 +5,8 @@
 
 {% block content %}
 <h2>Log In</h2>
-<form method="POST">{% csrf_toke %}
+<form method="POST">{% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Log In</button>
 </form>
-{% encblock content %}
+{% endblock content %}
